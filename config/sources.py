@@ -145,6 +145,7 @@ RSS_FEEDS = [
 
 # Configuration
 # 扩大到168小时(7天)以增加发现概率，因为顶级访谈较少
-LOOKBACK_HOURS = 75
+LOOKBACK_HOURS = 80
 MAX_RESULTS_PER_SOURCE = 15
+
 
