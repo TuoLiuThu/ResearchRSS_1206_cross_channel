@@ -8,7 +8,8 @@ import json
 import logging
 import re
 import google.generativeai as genai
-from typing import TypedDict, Optional
+from typing_extensions import TypedDict
+from typing import Optional
 
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -145,3 +146,4 @@ if __name__ == "__main__":
     result = summarize_content(test_item)
     if result:
         print(json.dumps(result, indent=2, ensure_ascii=False))
+
