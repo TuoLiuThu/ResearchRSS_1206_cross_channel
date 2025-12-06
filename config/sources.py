@@ -45,6 +45,37 @@ YOUTUBE_CHANNELS = [
         "channel_id": "UCBcMWTDE19JXYKpxxnY7yGQ",
         "description": "ML工程访谈",
     },
+    # 新增频道
+    {
+        "name": "Google DeepMind",
+        "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+        "description": "DeepMind官方频道",
+    },
+    {
+        "name": "Stanford HAI",
+        "channel_id": "UCg1W32qTjayiCDzQ5VpQ0oQ",
+        "description": "Stanford人工智能研究所",
+    },
+    {
+        "name": "Google",
+        "channel_id": "UCK1i2UviaXLUNrZlAFpw_jA",
+        "description": "Google官方 (I/O, 发布会)",
+    },
+    {
+        "name": "TED",
+        "channel_id": "UCAuUUnT6oDeKwE6v1US3LqQ",
+        "description": "TED演讲",
+    },
+    {
+        "name": "a]6z",
+        "channel_id": "UCBcRF18a7Qf58cCRy5xuWwQ",
+        "description": "a16z 科技投资播客",
+    },
+    {
+        "name": "Y Combinator",
+        "channel_id": "UCcefcZRL2oaA_uBNeo5UOWg",
+        "description": "YC创业访谈",
+    },
 ]
 
 # RSS feeds for tech news and podcasts
@@ -89,9 +120,31 @@ RSS_FEEDS = [
         "url": "https://www.anthropic.com/news/rss",
         "type": "blog",
     },
+    # 新增RSS源
+    {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "type": "news",
+    },
+    {
+        "name": "The Information",
+        "url": "https://www.theinformation.com/feed",
+        "type": "news",
+    },
+    {
+        "name": "Reuters Tech",
+        "url": "https://www.reuters.com/technology/rss",
+        "type": "news",
+    },
+    {
+        "name": "Bloomberg Tech",
+        "url": "https://feeds.bloomberg.com/technology/news.rss",
+        "type": "news",
+    },
 ]
 
 # Configuration
-LOOKBACK_HOURS = 80  # Slightly more than 24h to ensure we catch everything
-MAX_RESULTS_PER_SOURCE = 10
+# 扩大到168小时(7天)以增加发现概率，因为顶级访谈较少
+LOOKBACK_HOURS = 75
+MAX_RESULTS_PER_SOURCE = 15
 
