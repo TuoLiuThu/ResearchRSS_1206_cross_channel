@@ -92,5 +92,6 @@ RSS_FEEDS = [
 ]
 
 # Configuration
-LOOKBACK_HOURS = 26  # Slightly more than 24h to ensure we catch everything
+LOOKBACK_HOURS = 80  # Slightly more than 24h to ensure we catch everything
 MAX_RESULTS_PER_SOURCE = 10
+
